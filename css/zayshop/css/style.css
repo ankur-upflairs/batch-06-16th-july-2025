@@ -39,8 +39,9 @@
 
 }
 .product-section .cards div{
-    width: 100px;
-    margin: 10px auto;
+    /* width: 100px; */
+    /* margin: 10px auto; */
+    text-align: center;
 
 }
 .product-section .cards button{
