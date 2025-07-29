@@ -36,6 +36,20 @@ console.log(c >= d);    // Greater than or equal to: false
 
 
 //logical operators
+// logical and &&  => if both sides are true than return true
+console.log(true && false)
+console.log(true && true)
+console.log(false && false)
+console.log(false && true)
 
-
-
+// logical or ||  => if any side is true than return true
+console.log(true || false)
+console.log(true || true)
+console.log(false || false)
+console.log(false || true)
+// logical not !
+// reverse the result 
+// falsy value => false ,'',null, undefined, 0
+console.log(!'')
+console.log(!0)
+console.log(!78)
