@@ -1,3 +1,5 @@
+
+
 // arithmatic operators 
 console.log(23%5)
 // Arithmetic operators are used to perform mathematical calculations.
@@ -53,3 +55,11 @@ console.log(false || true)
 console.log(!'')
 console.log(!0)
 console.log(!78)
+//unary operators => 
+    // increament ++ increase value by one
+let i =5;
+i++;
+console.log(i)
+//decreament => -- decrease value by one
+i--
+console.log(i)
