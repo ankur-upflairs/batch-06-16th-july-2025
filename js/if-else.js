@@ -30,7 +30,19 @@ n= parseInt(n)
 // else{
 //     console.log('no. is zero')
 // }
+/*Check if a number is positive, negative, or zero.
 
+Check if a number is even or odd.
+
+Check if a person is eligible to vote (age ≥ 18).
+
+Compare two numbers and print the greater one.
+
+Check if a number is divisible by 5.
+
+Check if a number is a multiple of 3 or 7.
+
+Check if two numbers are equal or not.*/
 
 
 
