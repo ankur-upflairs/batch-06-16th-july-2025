@@ -13,6 +13,21 @@ let a ='hello'
 // length = no of total characters 
 // console.log(a[2])
 // console.log(a.length)
+let b = '    xyz    '
+// console.log(b.trim())//removes spaces
+// console.log(a.concat(b))//add 2 strings 
+// console.log(a.startsWith('h')) 
+// console.log(a.endsWith('lo'))
+// console.log(a.includes('el'))//checks if perticular substring is present or not
+// console.log(a.indexOf('l')) //index of first matching substring
+// console.log(a.lastIndexOf('l'))
+// console.log(a.padStart(7,'#'))
+// console.log(a.repeat(3))
+
+
+
+
+
 
 
 
