@@ -71,3 +71,13 @@ switch (day) {
         console.log('default case')
         break;
 }
+
+//ternary operator => short-hand of if-else
+// condition ? 'statement1' : 'statement2'
+
+//findout i is positive or negetive
+let i =-45
+i>=0 ? console.log('positive') : console.log('negetive')
+
+
+
