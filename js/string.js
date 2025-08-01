@@ -23,7 +23,12 @@ let b = '    xyz    '
 // console.log(a.lastIndexOf('l'))
 // console.log(a.padStart(7,'#'))
 // console.log(a.repeat(3))
-
+// console.log(a.replace('e','x'))//replace first occurance
+// console.log(a.replaceAll('l','x'))
+// console.log(a.slice(1,3))
+// console.log(a.slice(2))
+//substr and substring (old methods)
+// console.log(a.split(''))
 
 
 
