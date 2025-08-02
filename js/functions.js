@@ -23,16 +23,16 @@
 // }
 // console.log(cube(5))
 
-// arrow function 
+// arrow function
 // let square = (a)=>{
 //     return a**2
 // }
-// if single line statement 
+// if single line statement
 // let square = (a)=> a**2
 //if only one argument
 // let square = a=>a**2
 // console.log(square(23))
-// make a function that replaces a single characater in string and return 
+// make a function that replaces a single characater in string and return
 // new string (without using built in method )
 // function replace(str,a,b){
 //     let x= ''
@@ -46,4 +46,21 @@
 //     return x 
 // }
 // console.log(replace('hello','e','x'))
+
+//cb function => cb function is a fnc that passed as an argument to another 
+// fnc and called inside it 
+
+const calculateInterest =(rr,cb_fnc)=>{
+    let a = cb_fnc(rr)
+    return a
+}
+const bob =(rr)=>{
+    return rr * 2
+}
+
+// console.log(calculateInterest(5,bob))
+// console.log(calculateInterest(12,a=>a+3))
+
+
+
 
