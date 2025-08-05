@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="total">Total :  0</div>
+    <input type="number" id="in"><button id="add">add expense</button> <br>
+    <ul></ul>
+    <script>
+        let input = document.getElementById('in')
+        let add = document.getElementById('add')
+        let total = document.querySelector('.total')
+        let expense_ul = document.querySelector('ul')
+        let expenses;
+        if(localStorage.getItem('expenses')){
+            let localValue = localStorage.getItem('expenses')
+            localValue = JSON.parse(localValue)
+            expenses = localValue
+            calculateTotal()
+            showExpenses()
+        }else{
+            expenses = []
+        }
+        
+        add.addEventListener('click',function(){
+            let value = parseInt(input.value)
+            // console.log(value)
+            expenses.push({amount:value})
+            calculateTotal()
+            showExpenses()
+            input.value = ""
+            localStorage.setItem('expenses',JSON.stringify(expenses))
+        })
+        function calculateTotal(){
+            let sum = 0
+            expenses.forEach(v=>{
+                sum+=v.amount
+            })
+            total.innerHTML= `Total : ${sum}`
+        }
+        function showExpenses(){
+            let expenseHtml = ''
+            expenses.forEach(v=>{
+                if(v.amount > 0){
+                    expenseHtml+= `<li style='color:green;'>Income :  ${v.amount} </li>`
+                }
+                else{
+                    expenseHtml+= `<li style='color:red;'>Expense :  ${v.amount} </li>`
+
+                }
+                
+            })
+            expense_ul.innerHTML = expenseHtml
+        }
+    </script>
+</body>
+</html>
