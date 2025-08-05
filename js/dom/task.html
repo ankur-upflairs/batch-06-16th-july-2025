@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>dark</button>
+    <div class="highlight">hello</div>
+    <div class="highlight">hello</div>
+    <div class="highlight">hello</div>
+    <script>
+        // let boxes = document.querySelectorAll('.highlight')
+        // // boxes[0].style.color = 'purple' 
+        // boxes.forEach(el=>{
+        //     el.style.color = 'purple' 
+        // })
+        // let a = document.getElementsByClassName('highlight')
+        // Array.from(a).forEach(el=>{
+        //     el.style.color = 'purple' 
+        // })
+        let isDark = false 
+        document.querySelector('button')
+        .addEventListener('click',function(){
+            if(isDark){
+                document.body.style.backgroundColor= 'white'
+                this.innerText = 'dark'
+                isDark= false 
+            }
+            else{
+                document.body.style.backgroundColor= 'lightgrey'
+                this.innerText = 'light'
+                isDark= true
+            }
+        })
+    </script>
+</body>
+</html>
