@@ -36,8 +36,19 @@ btn1.addEventListener('click',function(){
 })
 //make a button that show a box onclick and a button that hides the same box
 //make button to change the theme of webpage(dark/light)
-
-
+let btn2 = document.getElementById('btn2')
+let para = document.getElementById('para')
+btn2.addEventListener('click',()=>{
+    //working with attributes
+    // let c = para.getAttribute('class')
+    // console.log(c)
+    // para.setAttribute('class','e')
+    // para.title = 'this is paragraph'
+    //working with classes
+    // para.classList.remove('d')
+    // para.classList.add('e') 
+    para.classList.toggle('e')
+})
 
 
 
