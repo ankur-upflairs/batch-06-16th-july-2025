@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="timer">
+        <span class="min"></span> : 
+        <span class="sec"></span>
+    </div>
+    <button class="btn">start</button><button class="stop">stop</button>
+    <script>
+        // let i =0
+        // setInterval(function(){
+        //     console.log(i);
+        //     i++
+        // },1000)
+        let timer = document.querySelector('.timer')
+        let button = document.querySelector('.btn')
+        let min = document.querySelector('.min')
+        let sec = document.querySelector('.sec')
+        let stopBtn = document.querySelector('.stop')
+        let i =0;
+        let j =0;
+        let timerId;
+        button.addEventListener('click',function(){
+            if(timerId) return
+           timerId= setInterval(function(){
+                if(i > 59){
+                    i=0;j++;
+                }
+                sec.innerHTML=i;
+                min.innerHTML =j;
+                i++
+            },1000)
+        })
+        stopBtn.addEventListener('click',function(){
+            clearInterval(timerId)
+            timerId = null;
+        })
+    </script>
+</body>
+</html>
