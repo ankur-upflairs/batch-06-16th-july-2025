@@ -11,6 +11,7 @@ function Tasks() {
     </div>
   )
 }
+// blogs => title , description , image ,author 
 
 // function Tasks() {
 //   return (
