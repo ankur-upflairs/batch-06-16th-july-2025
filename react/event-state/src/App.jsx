@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import ReactEvent from './ReactEvent'
 import ReactState from './ReactState'
+import ReactForm from './ReactForm'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,8 @@ function App() {
   return (
     <>
      {/* <ReactEvent /> */}
-     <ReactState />
+     {/* <ReactState /> */}
+     <ReactForm />
     </>
   )
 }
