@@ -1,0 +1,19 @@
+get => all tasks
+http://localhost:3000/tasks
+
+http://localhost:3000/tasks/id  =>get => get single tasks 
+
+http://localhost:3000/tasks  => post =>tasks (create) 
+
+form =>
+axios.post(url,data) 
+
+http://localhost:3000/tasks/id  => put (update)
+axios.put(url ,data)
+
+http://localhost:3000/tasks/id  => delete (delete) 
+
+axios.delete(url)
+
+
+  
