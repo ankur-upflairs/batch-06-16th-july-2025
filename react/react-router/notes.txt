@@ -1,0 +1,4 @@
+csr => client side rendering => complete website is send once and pages are rendered 
+using js (no server interaction on pages)
+
+ssr => server side rendering => make a request to server and get the new page
