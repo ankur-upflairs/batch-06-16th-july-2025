@@ -26,7 +26,7 @@ const fs = require('node:fs')
 // })
 // fs.appendFile('sample.txt','\nfile is appended ',(err)=>{
 //    if(err) console.log(err)
-// })
+// })  
 
 // make a progamme to create tables 1-10 in different files and name like 
 //table of 1.txt using loop 
