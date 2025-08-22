@@ -1,0 +1,38 @@
+sql => no sql
+db   -- db
+table -- collection => array of objects 
+json like format 
+[
+{
+  "_id":"682312679594bb99e6c73bf9",  
+  "name": "Alice Johnson",
+  "age": 28,
+  "city": "New York",
+  "group": "A"
+}
+]
+
+=> row --- document 
+=>columns --- fields
+=============
+show dbs
+use xyz
+show collections
+db.tasks.insertOne({title:"pay pendings","dueDays":5})
+db.tasks.find()
+
+db.tasks.insertMany([
+  { title: "Pay pendings", dueDays: 5 },
+  { title: "Submit assignment", dueDays: 2 },
+  { title: "Renew subscription", dueDays: 7 },
+  { title: "Prepare report", dueDays: 3 },
+  { title: "Call client", dueDays: 1 },
+  { title: "Team meeting", dueDays: 4 },
+  { title: "Update software", dueDays: 6 },
+  { title: "Buy groceries", dueDays: 2 },
+  { title: "Doctor appointment", dueDays: 8 },
+  { title: "Pay electricity bill", dueDays: 3 }
+])
+db.tasks.deleteMany({dueDays:5})
+db.tasks.updateOne({dueDays:2},{$set:{title:"title changes"}})
+
