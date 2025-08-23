@@ -20,8 +20,8 @@ app.use(express.urlencoded())
 app.get('/',(req,res)=>{
     res.send('hello world!!!')
 })
-app.use('/tasks',taskRouter)
 app.use('/students',studentRouter)
+app.use('/tasks',taskRouter)
 app.use('/users',userRouter)
 
 app.listen(3000,'localhost',()=>{
