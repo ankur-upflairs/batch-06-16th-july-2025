@@ -1,7 +1,7 @@
 const express = require('express')
 const {data} = require('./data.js')
 const mongoose = require('mongoose')
-
+const cors = require('cors')
 var taskRouter = require('./routes/taskRoutes.js')
 var studentRouter = require('./routes/studentsRoutes.js')
 var userRouter = require('./routes/userRoutes.js')
@@ -14,6 +14,7 @@ mongoose.connect('mongodb+srv://lead:lead123@cluster0.mk94png.mongodb.net/testin
 // app.use('/tasks',(req,res,next)=>{
 //     next()
 // })
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded())
 
