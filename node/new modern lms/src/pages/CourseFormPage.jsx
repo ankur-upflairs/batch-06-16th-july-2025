@@ -4,6 +4,7 @@ import CourseForm from '../components/CourseForm';
 
 // Import initial data
 import { initialCourses } from '../data';
+import axios from 'axios';
 
 const CourseFormPage = () => {
   const { id } = useParams();
@@ -21,7 +22,7 @@ const CourseFormPage = () => {
     }
   }, [id, isEdit]);
 
-  const handleSubmit = (courseData) => {
+  const handleSubmit =async (courseData) => {
     if (isEdit) {
       // Update existing course
       const updatedCourses = courses.map(c => 
@@ -31,6 +32,8 @@ const CourseFormPage = () => {
       // In a real app, this would be an API call to update the course
     } else {
       // Add new course
+      let res = await axios.post(import.meta.env.VITE_BACKEND_URL+'/courses',courseData)
+      console.log(res)
       const newCourse = {
         ...courseData,
         id: Math.max(...courses.map(c => c.id)) + 1,

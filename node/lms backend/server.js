@@ -5,6 +5,7 @@ const cors = require('cors')
 var taskRouter = require('./routes/taskRoutes.js')
 var studentRouter = require('./routes/studentsRoutes.js')
 var userRouter = require('./routes/userRoutes.js')
+var courseRouter = require('./routes/courseRoutes.js')
 // console.log(data)
 const app = express()
 mongoose.connect('mongodb+srv://lead:lead123@cluster0.mk94png.mongodb.net/testing')
@@ -24,6 +25,7 @@ app.get('/',(req,res)=>{
 app.use('/students',studentRouter)
 app.use('/tasks',taskRouter)
 app.use('/users',userRouter)
+app.use('/courses',courseRouter)
 
 app.listen(3000,'localhost',()=>{
     console.log('server is running on port 3000')

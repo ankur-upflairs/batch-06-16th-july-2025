@@ -103,7 +103,7 @@ const CourseList = ({ courses }) => {
 
               <div className="flex space-x-2">
                 <Link
-                  to={`/courses/${course.id}`}
+                  to={`/courses/${course._id}`}
                   className="flex-1 text-blue-600 hover:text-blue-900 hover:bg-blue-50 px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   View Details
