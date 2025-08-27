@@ -6,6 +6,7 @@ var taskRouter = require('./routes/taskRoutes.js')
 var studentRouter = require('./routes/studentsRoutes.js')
 var userRouter = require('./routes/userRoutes.js')
 var courseRouter = require('./routes/courseRoutes.js')
+var assignmentRouter = require('./routes/assignmentRoutes.js')
 // console.log(data)
 const app = express()
 mongoose.connect('mongodb+srv://lead:lead123@cluster0.mk94png.mongodb.net/testing')
@@ -26,6 +27,8 @@ app.use('/students',studentRouter)
 app.use('/tasks',taskRouter)
 app.use('/users',userRouter)
 app.use('/courses',courseRouter)
+app.use('/assignments',assignmentRouter)
+
 
 app.listen(3000,'localhost',()=>{
     console.log('server is running on port 3000')

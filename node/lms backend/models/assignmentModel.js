@@ -10,7 +10,7 @@ const assignmentSchema = new Schema({
         enum:['Active','Inactive']
     },
     points:{
-        type:Number
+        type:Number , default:100
     },
     dueDate:{
         type:Date
