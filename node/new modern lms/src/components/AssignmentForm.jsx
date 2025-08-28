@@ -83,7 +83,7 @@ const AssignmentForm = ({ assignment, courses, onSubmit, isEdit = false }) => {
               >
                 <option value="">Select a course</option>
                 {courses.map(course => (
-                  <option key={course.id} value={course.id}>{course.name} ({course.code})</option>
+                  <option key={course._id} value={course._id}>{course.name} ({course.code})</option>
                 ))}
               </select>
             </div>
